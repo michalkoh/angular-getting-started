@@ -43,7 +43,7 @@
                         <td>{{product.code | lowercase | convertToSpaces:'-'}}</td>
                         <td>{{product.releaseDate | date:'longDate'}}</td>
                         <td>{{product.price | currency:'EUR ':'code':'1.2-2' | uppercase}}</td>
-                        <td>{{product.rating}}</td>
+                        <td><pm-star [rating]="product.rating"></pm-star></td>
                     </tr>
                 </tbody>
             </table>

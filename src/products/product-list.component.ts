@@ -24,7 +24,7 @@ export class ProductListComponent implements OnInit {
             "releaseDate": new Date(2021, 11, 1),
             "description": "15 gallon capacity rolling garden cart",
             "price": 32.99,
-            "rating": 4.2,
+            "rating": 3.2,
             "imageUrl": "assets/images/garden_cart.png"
         },
         {
@@ -34,7 +34,7 @@ export class ProductListComponent implements OnInit {
             "releaseDate": new Date(2021, 5, 21),
             "description": "Curved claw steel hammer",
             "price": 8.9,
-            "rating": 4.8,
+            "rating": 4.5,
             "imageUrl": "assets/images/hammer.png"
         }
     ];
