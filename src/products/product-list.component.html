@@ -1,14 +1,12 @@
 <div class="card">
-    <div class="card-header">
-        Product List
-    </div>
+    <div class="card-header">{{pageTitle}}</div>
     <div class="card-body">
         <div class="row">
             <div class="col-md-2">Filter by:</div>
             <div class="col-md-4">
                 <input type="text" 
                        [(ngModel)]="listFilter"/>
-            </div>npm 
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -43,7 +41,7 @@
                         <td>{{product.code | lowercase | convertToSpaces:'-'}}</td>
                         <td>{{product.releaseDate | date:'longDate'}}</td>
                         <td>{{product.price | currency:'EUR ':'code':'1.2-2' | uppercase}}</td>
-                        <td><pm-star [rating]="product.rating"></pm-star></td>
+                        <td><pm-star [rating]="product.rating" (ratingClicked)="onRatingClicked($event)"></pm-star></td>
                     </tr>
                 </tbody>
             </table>

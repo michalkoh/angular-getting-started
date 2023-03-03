@@ -8,6 +8,7 @@ import { IProduct } from "./product";
 })
 
 export class ProductListComponent implements OnInit {
+
     pageTitle: string = 'Product List';
     imageWidth: number = 50;
     imageMargin: number = 2;
@@ -59,5 +60,10 @@ export class ProductListComponent implements OnInit {
 
     ngOnInit(): void {
         this.listFilter = "";
+    }
+
+    onRatingClicked(msg: string):void {
+        this.pageTitle = 'Product List: ' + msg;
+        console.log(msg);
     }
 }
